@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width:980px;
+    background-image: radial-gradient(rgb(214,136,164),rgb(58,22,27));
+    margin:auto;
+    font-family:"Calibri",Arial,sans-serif;
+}
+
+#header {
+    background-color: rgb(233, 231, 231);
+    padding:10px;
+    align-items:center;
+    display: flex;
+    justify-content:space-between;
+}
+
+#header>h1 {
+    display:inline-block;
+    font-family:papyrus, sans-serif;
+    font-weight:bold;
+}
+
+h2 {
+    display:inline-block;
+}
+
+#main{
+    background-image: radial-gradient(rgb(105, 2, 59),purple purple);
+    font-family:Calibri, Helvetica, sans-serif;
+}
+
+#portrait{
+    width:450px;
+    height:300px;
+    margin:20px;
+    padding:5px;
+    background-color:silver;
+    background-clip:padding-box;
+    display:inline-block;
+}
+
+#top-row{
+    display:flex;
+}
+
+#About{
+    display:inline-block;
+    background-image:linear-gradient(to right,white,rgb(234, 207, 207));
+    color:black;
+    margin-right:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+#label, #lowlabel1, #lowlabel2, #lowlabel3, #bottomlabel, #bottomlabel2, #bottomlabel3  {
+    margin-top:10px;
+    background-image: linear-gradient(rgb(182, 177, 177),rgb(136, 130, 130),rgb(182, 177, 177));
+    color:white;
+    padding:10px;
+}
+
+
+#text>p{
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#text>ul{
+    list-style: none;
+    margin-left:10px;
+    color:black;
+}
+
+#text {
+    margin-top:10px;
+}
+
+#continue{
+    color:black;
+}
+
+.bottom-blocks{
+    display:flex;
+    margin:10px;
+}
+
+
+#lamode, #family, #fiveeleven{
+    max-width:100%
+}
+
+#lowblock1, #lowblock2, #lowblock3{
+    margin:10px;
+    background-image:linear-gradient(to right,white,rgb(234, 207, 207));
+    width:33%
+}
+
+
+#lowtext, #lowtext2, #lowtext3{
+    margin-left:10px;
+    margin-top:10px;
+    margin-right:10px;
+    height:180px;
+}
+
+
+#label2 {
+    margin-top:10px;
+    background-image: linear-gradient(rgb(182, 177, 177),rgb(136, 130, 130),rgb(182, 177, 177));
+    color:white;
+    padding:10px;
+}
+
+.imagerow1, .imagerow2{
+    display:inline-block;
+}
+
+.imagerow1 > img, .imagerow2 > img{
+    max-width:15%;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:5px;
+}
+
+
+button{
+    background-color: green;
+    color:white;
+    border-radius:10px;
+    padding:5px;
+    display:flex;
+    margin:10px auto;
+}
+
+#bottom-banner{
+    text-align:center;
+    padding:5px;
+    font-family:"Calibri",Arial,sans-serif;
+}
+
+
+#social-media{
+    display:inline block;
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-family:"Calibri",Arial,sans-serif;
+}
+
+
+
+#social-media > img{
+    max-width:1%;
+}
+
+#social-media>ul>li{
+    display:inline-block;
+}
+
+#social-media > a {
+    color:black;
+    font-style:italic;
+}

@@ -1,0 +1,410 @@
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~
+$ ~/
+bash: /c/Users/mariu/: Is a directory
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~
+$ cd /Desktop
+bash: cd: /Desktop: No such file or directory
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~
+$ cd
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~
+$ cd Desktop
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop
+$ mk dir test
+bash: mk: command not found
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop
+$ mkdir test
+mkdir: cannot create directory ‘test’: File exists
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop
+$ mkdir test
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop
+$ cd /test
+bash: cd: /test: No such file or directory
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop
+$ cd test
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test
+$ touch index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test
+$ touch style.css
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test
+$ git init
+Initialized empty Git repository in C:/Users/mariu/Desktop/test/.git/
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "first version"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "second version with comments"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git add index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "first version"
+[master (root-commit) e25b059] first version
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git add index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "second version with comments"
+[master bad7d8c] second version with comments
+ 1 file changed, 1 insertion(+)
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ log
+bash: log: command not found
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git log
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git add index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "third version with css changes"
+[master b013c8f] third version with css changes
+ 1 file changed, 1 insertion(+)
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git log
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git log
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git revert -n e25b0590
+CONFLICT (modify/delete): index.html deleted in (empty tree) and modified in HEAD. Version HEAD of index.html left in tree.
+error: could not revert e25b059... first version
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git log
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git revert b013c8fffe
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git add style.css
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git commit -m "css style doc"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git add .
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master|REVERTING)
+$ git commit -m "both html and css"
+[master 67999ba] both html and css
+ 1 file changed, 8 insertions(+)
+ create mode 100644 style.css
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ log
+bash: log: command not found
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git log
+commit 67999bab58278afa692dabfbb685978f108b9ac0 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:48:38 2021 -0400
+
+    both html and css
+
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+:
+commit 67999bab58278afa692dabfbb685978f108b9ac0 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:48:38 2021 -0400
+
+    both html and css
+
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+:
+commit 67999bab58278afa692dabfbb685978f108b9ac0 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:48:38 2021 -0400
+
+    both html and css
+
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+:
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+^C
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git log
+commit 67999bab58278afa692dabfbb685978f108b9ac0 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:48:38 2021 -0400
+
+    both html and css
+
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+:
+commit 67999bab58278afa692dabfbb685978f108b9ac0 (HEAD -> master)
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:48:38 2021 -0400
+
+    both html and css
+
+commit b013c8fffe4d37ec8eff9285844808a2f7b6f594
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:44:19 2021 -0400
+
+    third version with css changes
+
+commit bad7d8c2d42f2a5746ad59b4a1f734fc504c2a4e
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:35 2021 -0400
+
+    second version with comments
+
+commit e25b0590c1985c43a9e2301455401f6465f8279b
+Author: Marius Paulikas <mariuspaulikas@yahoo.com>
+Date:   Tue Jul 27 18:41:02 2021 -0400
+
+    first version
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git revert 67999bab
+Removing style.css
+[master e9a5016] Revert "both html and css"
+ 1 file changed, 8 deletions(-)
+ delete mode 100644 style.css
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git add index.html
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$ git commit -m "without the css sheet"
+[master 38e8763] without the css sheet
+ 1 file changed, 1 insertion(+)
+
+mariu@LAPTOP-52JKBNUH MINGW64 ~/Desktop/test (master)
+$

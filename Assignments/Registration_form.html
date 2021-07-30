@@ -1,0 +1,41 @@
+<form action ="process.php" method="post">
+    <h1>My Registration Form</h1>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name"><br>
+
+    <label for="Email">Email:</label>
+    <input type="text" id="email" name="email"><br>
+
+    <label for="Password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="PW_Confirm">PW Confirm:</label>
+    <input type="password" id="PW_Confirm" name="PW_Confirm"><br>
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" placeholder="mm/dd/yyyy" value=""><br>
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other"><br>
+
+    <p>A short description about yourself:</p>
+    <textarea name="description"></textarea> <br><br>
+
+    <label for="Favorite_language">Favorite Language</label>
+    <select name="Favorite_Language">
+        <option value="JavaScript">Javascript</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+    </select> <br><br>
+
+    <input type="submit" value="Submit">
+</form>

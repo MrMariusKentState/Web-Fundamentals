@@ -1,0 +1,35 @@
+
+
+Final score: 13/15 correct
+
+
+
+1. Predicted:  35;  actual: 35
+
+2. Predicted: 8; actual: 8
+
+3. Predicted: 6; actual: 6
+
+4. Predicted: 3,9;  actual: 3,9
+
+5. Predicted: 40;  actual: 40
+
+x  6. Predicted: 15,4;  actual: 4  x
+
+x  7. Predicted: 30,30;  actual: 10,3,30 x
+
+8. Predicted: 3,4;  actual: 3,4
+
+9. Predicted: 2,5,8,11;  actual: 2,5,8,11
+
+10. Predicted: 0 -> 9, 0 -> 9, 0;  actual:  (same)
+
+11. Predicted: no output;  actual: no output
+
+12. Predicted: no output; acutal: no output
+
+13. Predicted: 10; actual: 10
+
+14. Predicted: 15,10;  actual: 15,10
+
+15. Predicted: 15,15;  actual: 15,15

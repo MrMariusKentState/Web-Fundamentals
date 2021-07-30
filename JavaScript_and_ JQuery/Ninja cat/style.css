@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+#container {
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+}
+
+img {
+    display:block;
+    margin-top:10px;
+}
+
+#cat0, #ninja0 {
+    position: absolute;
+    left:500px;
+}
+
+#cat1, #ninja1 {
+    position: absolute;
+    top:80px;
+    left:500px;
+}
+
+#cat2, #ninja2 {
+    position: absolute;
+    top:142px;
+    left:500px;
+}
+
+#cat3, #ninja3 {
+    position: absolute;
+    top:205px;
+    left:500px;
+}
+
+#cat4, #ninja4 {
+    position: absolute;
+    top:268px;
+    left:500px;
+}

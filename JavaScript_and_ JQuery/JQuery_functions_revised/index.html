@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery exercises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "Jquery.js"></script>
+        <!-- $(document).ready(function(){
+            $('#class').click(function(){
+               $('#first').addClass("red");
+            })
+
+            $('#toggle').click(function(){
+                $('#second').slideToggle("slow");
+            })
+
+            $('#hide').click(function(){
+                $('#third').hide("slow");
+            })
+            $('#seek').click(function(){
+                $('#third').show("slow");
+            })
+            $('#fadein').click(function(){
+                $('#fourth').fadeIn(1000);
+            })
+            $('#fadeout').click(function(){
+                $('#fourth').fadeOut(1000);
+            })
+            $('#slideup').click(function(){
+                $('#slide').slideUp("slow");
+            })
+            $('#slidedown').click(function(){
+                $('#slide').slideDown("slow");
+            })
+            $('#append').click(function(){
+                $('#sixth').append("<strong> I love Coding Dojo!</strong>");
+            })
+            $('#html').click(function(){
+                $('#seventh').html("<strong> I love Coding Dojo!</strong>");
+            })
+            $('#seventh').hover(function(){
+                $('#seventh').html("<strong> I love Coding Dojo!</strong>");
+            })
+            $('#before').click(function(){
+                $('#JQuery').before("Here we go.");
+            })
+            $('#after').click(function(){
+                $('#JQuery').after("<strong>Bring it!</strong>");
+            })
+            $('#attr').attr({
+                id:"renamed"
+            })
+            $('#renamed').click(function(){
+                $('#ninth').append(" The button ID was renamed successfully.");
+            })
+           
+            $('#text').click(function(){
+                $('#tenth').text("<strong>It's a beautiful day in the neighborhood!</strong>")
+            })
+            $('#value').click(function(){
+                $("input:text").val("Finished last JQuery test!")
+            })
+        }) -->
+
+    <!-- </script> -->
+</head>
+<body>
+    <div id = "container">
+        <div id="header">
+            <h1 id = "JQuery">JQuery exercise!</h1>
+        </div>
+        <div class = "Blocks">
+            <h1>Add Class</h1><br>
+            <div class = "buttonpar">
+                <button id="class">Add Class</button>
+                <p id="first">Click the button to add class 'red' to this paragraph. </p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Slide Toggle</h1><br>
+            <div class = "buttonpar">
+                <button id="toggle">Slide Toggle</button>
+                <p id="second">Click the button to slide toggle this paragraph. </p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Hide and Seek!</h1><br>
+            <div class = "buttonpar">
+                <button id="hide">Hide</button><button id="seek">Seek</button>
+                <p id="third">Click the hide button to hide this paragraph. Click the seek button to display the paragraph!</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Fade In and Out</h1><br>
+            <div class = "buttonpar">
+                <button id="fadein">Fade In</button><button id="fadeout">Fade out</button>
+                <p id="fourth">Click 'Fade In' for this paragraph to slowly appear. Click 'Fade Out' for it to slowly disappear.</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1 id="slide">Slide Up/Down</h1><br>
+            <div class = "buttonpar">
+                <button id="slideup">Slide Up</button><button id="slidedown">Slide Down</button>
+                <p id ="fifth">Click 'Slide Up' for this header to slowly disappear. Click 'Slide Down' for it to slowly reappear.</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Append</h1><br>
+            <div class = "buttonpar">
+                <button id="append">Append</button>
+                <p id ="sixth">Click 'Append' to express love for Coding Dojo!</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Html</h1><br>
+            <div class = "buttonpar">
+                <button id="html">html</button>
+                <p id ="seventh">Click 'html' to reveal a hidden message! (Or, hover over this text).</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1 id="BA">Before/After</h1><br>
+            <div class = "buttonpar">
+                <button id="before">before</button><button id="after">after</button>
+                <p id ="eighth">Click 'before' to reveal the first sentence above the "JQuery exercise!" header (at the very top). Click 'after' to reveal what comes after the header.</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1 id="Attribute">Attribute with alert</h1><br>
+            <div class = "buttonpar">
+                <button id="attr">attributes</button>
+                <p id ="ninth">Click the 'attributes' button to receive a notification about its id.</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Text</h1><br>
+            <div class = "buttonpar">
+                <button id="text">text</button>
+                <p id ="tenth">Click the 'text' button to see random text and code replacing this paragraph!</p>
+            </div>
+        </div>
+        <div class = "Blocks">
+            <h1>Value</h1><br>
+            <div class = "buttonpar">
+                <button id="value">Value</button>
+                <p>Input some random text into the text box.  Then, click the "value" button and see what the text box returns!</p>
+                <input type="text" name="user">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
